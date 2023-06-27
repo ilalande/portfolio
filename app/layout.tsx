@@ -58,8 +58,7 @@ const PrimaryLayout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <div className='mainWrapper'>
           <Header />
-
-          <div className='section'>{children}</div>
+          <main className='section'>{children}</main>
           <Footer />
         </div>
       </body>

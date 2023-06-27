@@ -1,7 +1,11 @@
-$main-color-dark: hsl(249, 64%, 56%);
-$second-color-lighter: hsl(64, 82%, 72%);
+$main-color-black: hsl(0, 0%, 23%);
+$second-color-blue: hsla(223, 78%, 27%);
+$main-color-white: hsl(0, 0%, 97%);
+$second-color-blue__transparent-80: hsla(223, 78%, 27%, 0.8);
+$main-color-white__transparent-80: hsl(0, 0%, 97%, 0.8);
 
 :export {
-  main-color-dark: $main-color-dark;
-  second-color-lighter: $second-color-lighter;
+  main-color-black: $main-color-black;
+  second-color-blue: $second-color-blue;
+  main-color-white: $main-color-white;
 }

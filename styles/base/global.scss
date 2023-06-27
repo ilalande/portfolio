@@ -1,41 +1,39 @@
 @import '@styles/utilities/utilities.scss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
 body {
-  height: 100%;
-}
-
-//  Create a root stacking context
-// */ #root,
-// #__next {
-//   isolation: isolate;
-// }
-
-body {
-  background-color: $main-color-dark;
-  color: $second-color-lighter;
-  border: 1px solid $second-color-lighter;
+  background-color: $main-color-black;
+  color: $main-color-white;
 }
 
 .mainWrapper {
   width: 100%;
-  border: 2px solid red;
   height: 100%;
   margin: auto;
   max-width: $laptop;
+  background-image: url('/images/background_1920_1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 10%;
+}
+
+main {
+  border: 3px solid red;
+  height: 82%;
+}
+footer {
+  height: 8%;
+  background-color: $second-color-blue;
 }
 
 .section {
-  width: 100%;
-  border: 2px solid red;
+  width: 80%;
+  margin: auto;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 // .container {
@@ -54,3 +52,16 @@ body {
 //   width: 45%;
 //   border: 1px solid blue;
 // }
+
+a:hover {
+  cursor: pointer;
+  color: $main-color-white;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
