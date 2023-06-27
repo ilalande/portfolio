@@ -8,40 +8,34 @@ body {
 .mainWrapper {
   width: 100%;
   height: 100%;
-  margin: auto;
-  max-width: $laptop;
   background-image: url('/images/background_1920_1080.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 header {
-  height: 10%;
+  min-height: 10%;
+  display: flex;
 }
 
 main {
-  border: 3px solid red;
-  height: 82%;
+  min-height: 82%;
+  //To center vertically main in page
+  display: flex;
+  align-items: flex-end;
 }
 footer {
-  height: 8%;
-  background-color: $second-color-blue;
+  min-height: 8%;
+  background-color: $second-color-blue__transparent-80;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .section {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
+  margin: 0 auto;
+  max-width: $laptop;
 }
-
-// .container {
-//   width: 80%;
-//   max-width: 1128px;
-//   margin: 0 auto;
-//   border: 1px solid green;
-// }
 
 // .row {
 //   display: flex;

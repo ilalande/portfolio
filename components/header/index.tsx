@@ -3,8 +3,12 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <>
-      <header role='banner' className={styles.header}>
-        <nav role='navigation' aria-label='navigation principale'>
+      <header role='banner' className={`${styles.header}`}>
+        <nav
+          role='navigation'
+          aria-label='navigation principale'
+          className='section'
+        >
           <ul>
             <li>
               <Link href='/'>Juliane Casier </Link>

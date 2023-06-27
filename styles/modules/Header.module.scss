@@ -2,31 +2,39 @@
 
 .header nav {
   display: flex;
-  height: 100%;
   justify-content: space-between;
   align-items: flex-end;
   font-size: 1.8rem;
+  width: 100%;
 }
 
 .header ul {
   display: flex;
-}
-.header li {
-  padding: 1rem;
-  margin: 0 1rem;
-}
-.header a {
-  color: $main-color-white;
-}
-.header li:hover {
-  border-bottom: 1px solid $main-color-white;
-  opacity: 90%;
-  cursor: pointer;
-  a {
-    font-weight: 800;
-  }
+  flex-wrap: wrap;
 }
 
 .menu {
   font-size: 1.4rem;
+  gap: 1.5rem;
+}
+
+.header a {
+  color: $main-color-white;
+}
+
+.header li {
+  padding-bottom: 0.5rem;
+  //To avoid shift on hover
+  border-bottom: 2px solid transparent;
+}
+.header li:hover {
+  border-bottom: 2px solid white;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+@media #{$laptop-up} {
+  .header ul {
+    margin-left: 0rem;
+  }
 }
