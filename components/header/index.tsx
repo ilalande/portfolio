@@ -1,5 +1,8 @@
 import styles from '@styles/modules/Header.module.scss';
-import Link from 'next/link';
+
+import { navItemsHeader } from '@utils/routes';
+import NavItems from '@components/navItems';
+
 const Header = () => {
   return (
     <>
@@ -9,22 +12,7 @@ const Header = () => {
           aria-label='navigation principale'
           className='section'
         >
-          <ul>
-            <li>
-              <Link href='/'>Juliane Casier </Link>
-            </li>
-          </ul>
-          <ul className={styles.menu}>
-            <li>
-              <Link href='/cv'>CV</Link>
-            </li>
-            <li>
-              <Link href='/page/projets'>Projets</Link>
-            </li>
-            <li>
-              <Link href='/page/contact'>Contact et Infos</Link>
-            </li>
-          </ul>
+          <NavItems navItems={navItemsHeader} cat='navHeader' />
         </nav>
       </header>
     </>

@@ -5,39 +5,3 @@
   font-size: 1.8rem;
   width: 100%;
 }
-.footer ul {
-  font-size: 1rem;
-  height: 100%;
-  width: 100%;
-  padding: 0.5rem;
-}
-.footer li {
-  padding-bottom: 0.2rem;
-  margin-top: 0.5rem;
-  //To avoid shift on hover
-  border-bottom: 1px solid transparent;
-}
-
-.footer a {
-  color: $main-color-white;
-}
-.footer li:hover {
-  border-bottom: 1px solid $main-color-white;
-  opacity: 90%;
-  cursor: pointer;
-  a {
-    font-weight: 800;
-  }
-}
-@media #{$laptop-up} {
-  .footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 0.2rem;
-    gap: 3rem;
-  }
-  .footer li {
-    padding-bottom: 0.5rem;
-  }
-}

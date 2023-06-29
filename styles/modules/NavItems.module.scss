@@ -1,0 +1,113 @@
+@import '@styles/utilities/utilities.scss';
+.navItems {
+  width: 100%;
+  margin: 0;
+}
+
+.navItems ul {
+  font-size: 1rem;
+}
+
+.navItems li {
+  //To avoid too long line on hover in footer
+  width: fit-content;
+  //To avoid shift on hover
+  border: 2px solid transparent;
+}
+
+.navItems a:hover {
+  border-bottom: 2px solid $main-color-white;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.navItems a {
+  color: $main-color-white;
+}
+
+//To manage header
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.headerWrapper ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+
+.headerWrapper li {
+  padding: 0.8rem;
+}
+
+.menuItemsHeader a,
+.menuItemsHeader span {
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.activeLinkHeader {
+  background-color: $main-color-white__transparent20;
+  border-radius: 3px;
+}
+
+.homeItemHeader {
+  // To avoid shift on home page
+  min-width: 150px;
+}
+
+.homeItemHeader li {
+  font-size: 1.2rem;
+}
+
+.homeItemHeader a,
+.menuFooter span {
+  padding-bottom: 0.4rem;
+}
+//To manage footer
+.menuFooter {
+  margin: 0.5rem 0 0.2rem 0.5rem;
+}
+
+.menuFooter li {
+  padding-bottom: 0.5rem;
+}
+.menuFooter a,
+.menuFooter span {
+  padding-bottom: 0.4rem;
+}
+
+.activeLinkFooter span {
+  border-bottom: 2px solid $main-color-white;
+}
+
+//Media queries
+@media #{$laptop-up} {
+  .menuFooter {
+    margin: 0 0 0.2rem 0;
+  }
+
+  .headerWrapper ul {
+    margin: 0;
+  }
+}
+
+@media #{$medium-up} {
+  .menuFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .homeItemHeader li {
+    font-size: 1.6rem;
+  }
+
+  .menuItemsHeader li {
+    font-size: 1.2rem;
+  }
+}
