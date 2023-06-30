@@ -7,15 +7,35 @@ import '@styles/globals.scss';
 import { Inter } from 'next/font/google';
 
 const manjari = localFont({
-  src: '../public/fonts/Manjari-Regular.woff2',
-  weight: '700',
+  src: [
+    {
+      path: '../public/fonts/Manjari-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Manjari-Bold.woff2',
+      weight: '800',
+      style: 'bold',
+    },
+  ],
   variable: '--manjari',
   //To avoid layout shift and insure font will always show
   display: 'swap',
 });
 const ubuntu = localFont({
-  src: '../public/fonts/Ubuntu-Regular.woff2',
-  weight: '700',
+  src: [
+    {
+      path: '../public/fonts/Ubuntu-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Ubuntu-Bold.woff2',
+      weight: '800',
+      style: 'bold',
+    },
+  ],
   variable: '--ubuntu',
   display: 'swap',
 });

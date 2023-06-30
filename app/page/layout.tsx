@@ -1,10 +1,7 @@
+import styles from '@styles/modules/StaticLayout.module.scss';
+
 const StaticLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className='section'>
-      <p>Here is a static layout</p>
-      {children}
-    </div>
-  );
+  return <div className={`container ${styles.staticLayout}`}>{children}</div>;
 };
 
 export default StaticLayout;

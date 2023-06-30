@@ -1,12 +1,11 @@
 @import '@styles/utilities/utilities.scss';
 
-.container {
+.homeContainer {
   height: 100%;
-  min-height: 600px;
+  min-height: 550px;
   margin: auto;
   max-width: $laptop;
   width: 80%;
-  max-width: 1128px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
