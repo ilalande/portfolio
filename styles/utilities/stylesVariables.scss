@@ -1,0 +1,22 @@
+// ------- COLOR THEME---------//
+
+$main-color-black: hsl(0, 0%, 23%);
+$second-color-blue: hsla(223, 78%, 27%);
+$main-color-white: hsl(0, 0%, 97%);
+$main-color-white__transparent20: hsl(0, 0%, 97%, 0.2);
+$second-color-blue__transparent-80: hsla(223, 78%, 27%, 0.8);
+$second-color-blue__transparent-60: hsla(223, 78%, 27%, 0.6);
+$main-color-white__transparent-80: hsl(0, 0%, 97%, 0.8);
+$main-color-black__transparent-90: hsl(0, 0%, 23%, 0.9);
+
+$error-color: red;
+// ------- SPACING---------//
+
+//----To manage diagonal in general layout
+$magic-number: 0.09719;
+$skew-padding: calc(var(--width) * var(--magic-number));
+$clip-padding: calc(var(--full-width) * var(--magic-number));
+$angle: -11deg;
+// ------- OTHER STYLES---------//
+
+$border-radius: 2px;
