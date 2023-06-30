@@ -1,5 +1,5 @@
 body {
-  line-height: 1.5;
+  font-family: var(--manjari);
   -webkit-font-smoothing: antialiased;
 }
 p,
@@ -10,4 +10,8 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
 }

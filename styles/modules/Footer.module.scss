@@ -1,8 +1,7 @@
 @import '@styles/utilities/utilities.scss';
-
-.header nav {
+.listWrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   font-size: 1.8rem;
   width: 100%;
 }

@@ -1,56 +1,98 @@
 @import '@styles/utilities/utilities.scss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
 body {
-  height: 100%;
-}
-
-//  Create a root stacking context
-// */ #root,
-// #__next {
-//   isolation: isolate;
-// }
-
-body {
-  background-color: $main-color-dark;
-  color: $second-color-lighter;
-  border: 1px solid $second-color-lighter;
+  background-color: $main-color-black;
+  color: $main-color-white;
 }
 
 .mainWrapper {
   width: 100%;
-  border: 2px solid red;
   height: 100%;
-  margin: auto;
-  max-width: $laptop;
+}
+.low-opactiy-bg-image {
+  --bg-image: url('/images/background_1920_1080.jpg');
+  --bg-image-opacity: 0.8;
+  position: relative;
+  isolation: isolate;
+}
+
+//To control bacground image opacity
+.low-opactiy-bg-image::after {
+  content: '';
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: var(--bg-image-opacity);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+header {
+  min-height: 10%;
+  display: flex;
+  position: sticky;
+}
+
+main {
+  min-height: 82%;
+  //To center vertically main in page
+  display: flex;
+  justify-content: center;
+}
+footer {
+  min-height: 8%;
+  background-color: $second-color-blue__transparent-80;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+}
+
+@media #{$medium-up} {
+  footer {
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+  }
 }
 
 .section {
-  width: 100%;
-  border: 2px solid red;
+  margin: 0 auto;
+  max-width: $laptop;
+}
+.titleWrapper {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  justify-content: flex-end;
+  margin-right: -6rem;
+}
+.titleWrapper h1 {
+  text-transform: uppercase;
+  border-radius: $border-radius;
+  width: fit-content;
+  padding: 1.5rem 10rem 1.5rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  background-color: $main-color-black__transparent-90;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 }
 
-// .container {
-//   width: 80%;
-//   max-width: 1128px;
-//   margin: 0 auto;
-//   border: 1px solid green;
-// }
+h2 {
+}
+.container {
+  width: 100%;
+}
 
-// .row {
-//   display: flex;
-//   justify-content: space-between;
-//   border: 1px solid orange;
-// }
-// .column {
-//   width: 45%;
-//   border: 1px solid blue;
-// }
+a:hover {
+  cursor: pointer;
+  color: $main-color-white;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,26 @@
+@import '@styles/utilities/utilities.scss';
+.staticLayout .articleWrapper {
+  width: 80%;
+  margin: 1rem auto;
+}
+.articleDecoration {
+  background-color: $main-color-white__transparent20;
+  border: 1px solid $main-color-white__transparent20;
+  margin: 1rem 0;
+}
+.staticLayout article {
+  background-color: $main-color-white;
+  color: $main-color-black;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.staticLayout h2 {
+  font-weight: 700;
+}
+
+@media #{$medium-up} {
+  .staticLayout .articleWrapper {
+    width: 60%;
+  }
+}
