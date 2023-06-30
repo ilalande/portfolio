@@ -76,9 +76,10 @@ const PrimaryLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='fr-FR' className={`${ubuntu.variable} ${manjari.variable}`}>
       <body>
-        <div className='mainWrapper'>
+        <div className='mainWrapper low-opactiy-bg-image'>
           <Header />
           <main className='section'>{children}</main>
+
           <Footer />
         </div>
       </body>

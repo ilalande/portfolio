@@ -54,6 +54,7 @@
 .activeLinkHeader {
   background-color: $main-color-white__transparent20;
   border-radius: $border-radius;
+  clip-path: polygon(1% 11%, 100% 0, 100% 100%, 0 94%);
 }
 
 .homeItemHeader {
