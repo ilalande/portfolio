@@ -1,6 +1,5 @@
 import localFont from 'next/font/local';
-import Footer from '@components/footer';
-import Header from '@components/header';
+
 import '@styles/globals.scss';
 
 // Defining font - doc from https://nextjs.org/docs/app/building-your-application/optimizing/fonts
@@ -75,14 +74,7 @@ export const metadata = {
 const PrimaryLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='fr-FR' className={`${ubuntu.variable} ${manjari.variable}`}>
-      <body>
-        <div className='mainWrapper low-opactiy-bg-image'>
-          <Header />
-          <main className='section'>{children}</main>
-
-          <Footer />
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
