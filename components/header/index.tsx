@@ -1,6 +1,6 @@
 import styles from '@styles/modules/Header.module.scss';
 
-import { navItemsHeader } from '@utils/routes';
+import { navItemsHeader, homeItemHeader } from '@utils/routes';
 import NavItems from '@components/navItems';
 
 const Header = () => {
@@ -12,6 +12,7 @@ const Header = () => {
           aria-label='navigation principale'
           className='section'
         >
+          <NavItems navItems={homeItemHeader} cat='home' />
           <NavItems navItems={navItemsHeader} cat='navHeader' />
         </nav>
       </header>

@@ -3,6 +3,37 @@
 .header nav {
   display: flex;
   align-items: flex-end;
-  font-size: 1.8rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header ul {
+  width: fit-content;
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.header li {
+  min-width: 90px;
+}
+
+@media #{$laptop-up} {
+  .header ul,
+  .header li {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media #{$medium-up} {
+  .header li {
+    font-size: 1.6rem;
+  }
+  .header ul {
+    gap: 2rem;
+  }
 }

@@ -2,6 +2,30 @@
 .listWrapper {
   display: flex;
   align-items: baseline;
-  font-size: 1.8rem;
   width: 100%;
+}
+
+//To manage footer
+.footer ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+}
+.footer li {
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@media #{$medium-up} {
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+  }
+  .footer li {
+    font-size: 1rem;
+  }
 }

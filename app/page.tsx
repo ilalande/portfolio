@@ -3,7 +3,7 @@ import Footer from '@components/footer';
 import Header from '@components/header';
 export default function HomePage() {
   return (
-    <div className='mainWrapper low-opactiy-bg-image'>
+    <div className='mainWrapper'>
       <Header />
       <main className={`${styles.homeContainer} section`}>
         <div className={styles.titles}>

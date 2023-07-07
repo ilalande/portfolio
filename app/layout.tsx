@@ -74,7 +74,7 @@ export const metadata = {
 const PrimaryLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='fr-FR' className={`${ubuntu.variable} ${manjari.variable}`}>
-      <body>{children}</body>
+      <body className='low-opactiy-bg-image'>{children}</body>
     </html>
   );
 };
