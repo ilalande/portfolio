@@ -3,12 +3,16 @@
 body {
   background-color: $main-color-black;
   color: $main-color-white;
+  height: 100%;
 }
 
 .mainWrapper {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
+
 .low-opactiy-bg-image {
   --bg-image: url('/images/background_1920_1080.jpg');
   --bg-image-opacity: 0.8;
@@ -30,20 +34,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
+.section {
+  @include generalLayout;
+  width: 80%;
+}
+
 header {
   min-height: 10%;
   display: flex;
-  position: sticky;
 }
 
-main {
-  min-height: 82%;
-  //To center vertically main in page
-  display: flex;
-  justify-content: center;
-}
 footer {
-  min-height: 8%;
   background-color: $second-color-blue__transparent-80;
   display: flex;
   align-items: flex-end;
@@ -57,10 +58,6 @@ footer {
   }
 }
 
-.section {
-  margin: 0 auto;
-  max-width: $laptop;
-}
 .titleWrapper {
   display: flex;
   justify-content: flex-end;
@@ -76,12 +73,6 @@ footer {
   margin-top: 3rem;
   background-color: $main-color-black__transparent-90;
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
-}
-
-h2 {
-}
-.container {
-  width: 100%;
 }
 
 a:hover {

@@ -1,29 +1,31 @@
 import { IRoutes } from '@custom-types/routes';
 
-export const navItemsHeader: IRoutes[] = [
+export const homeItemHeader: IRoutes[] = [
   {
     name: 'home',
     text: 'Juliane Casier',
     path: '/',
-    id: 'HEAD000',
+    id: 'HOME000',
   },
+];
+export const navItemsHeader: IRoutes[] = [
   {
     name: 'cv',
     text: 'CV',
     path: '/cv',
-    id: 'HEAD001',
+    id: 'HEAD000',
   },
   {
     name: 'projects',
     text: 'Projets',
     path: '/projets',
-    id: 'HEAD002',
+    id: 'HEAD001',
   },
   {
     name: 'contact',
     text: 'Contact et Informations',
     path: '/page/contact',
-    id: 'HEAD003',
+    id: 'HEAD002',
   },
 ];
 export const navItemsFooter: IRoutes[] = [
